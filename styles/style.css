@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    font-family: var(--fuente-krona);
+}
+:root {
+    --color-primaria: #000000;
+    --color-secundaria: #f6f6f6; /*#f6f6f6*/
+    --color-terciaria: #22D4FD;
+    --color-cuaternario:#6f5693;
+    --color-hover: #272727;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+*{
+    background: var(--color-secundaria);
+    padding: 5px;
+    margin: 5px;
+}
+
+.logo{
+    justify-content: left;
+    padding: 1%;
+    width: 25%;
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+body{
+    
+    width: 100%;
+    height: 100%;
+}
+
+main{
+
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 1%;
+}
+
+.seccion{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.caja_texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    color: var(--color-primaria);
+    margin: 1%;
+    padding: 1%;
+    text-transform: lowercase;
+    resize: none;
+}
+::placeholder{color: var(--color-primaria);}
+    .caja_texto:focus{
+        outline: none
+    }
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+}
+
+.boton{
+    background-color:var(--color-cuaternario);
+    border: 1px solid var(--color-cuaternario);
+    border-radius: 25px;
+    color: var(--color-secundaria);
+    cursor: pointer;
+    height: 67px;
+    width: 280px;
+    transition: all 0.4s ease-in-out;
+}
+
+.boton:hover{
+    background-color:var(--color-terciaria);
+    border: 1px solid var(--color-terciaria);
+    color: var(--color-primaria);
+    transition: all 0.4s ease-in-out;
+}
+
+.informacion{
+    font-size: 18px;
+}
+
+.Author{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+@media (max-width: 1200px) {
+
+    .header{
+         padding: 10%;  
+    }
+    
+    body{
+        width: auto;
+        height: auto;
+    }
+
+    .seccion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10%;
+    }
+}

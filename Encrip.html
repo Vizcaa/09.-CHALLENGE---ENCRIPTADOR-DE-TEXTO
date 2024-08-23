@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Recursos/aluraoracle.png" alt="Logo Alura Latam ">
+    </header>
+    
+    <main class = "Encriptador_texto">
+        <section>
+            <textarea class="caja_texto" cols="25" rows="15" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+            <h6 class="informacion"> <img class="emoticon" src="./Recursos/simbol_alert.png" alt="simbol_alerta"> No se aceptarán mayusculas ni caracteres especiales</h6>
+            <p id="feedback"></p>
+        </div>
+            <div class="botones">
+                <button onclick="bot_encriptar()" class= "boton" id="Encriptar">
+                Encriptar</button>
+                <button onclick="bot_desencriptar()" class= "boton" id="Desencriptar">
+                Desencriptar</button>
+                <button onclick="bot_limpiar()" class= "boton">
+                Limpiar</button>
+            </div>
+        </section> 
+        <script src="Chall.js"></script>
+    </main>
+    <footer>
+        <p class="Author"> Santiago Vizcaíno 2024</p>
+    </footer>
+</body>
+</html>
